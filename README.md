@@ -12,7 +12,6 @@ Create a simple document.
 
 ```java
 
-
 ```
 
 

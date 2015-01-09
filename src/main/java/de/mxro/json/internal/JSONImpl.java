@@ -90,4 +90,9 @@ public class JSONImpl extends JSON {
         this.entries = new ArrayList<Entry<String, Object>>();
     }
 
+    @Override
+    public void print() {
+        System.out.println(this.render());
+    }
+
 }

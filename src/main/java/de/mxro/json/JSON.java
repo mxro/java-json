@@ -51,4 +51,10 @@ public abstract class JSON {
      */
     public abstract String render(int indentSize);
 
+    /**
+     * <p>
+     * Prints this document to standard out.
+     */
+    public abstract void print();
+
 }
