@@ -2,6 +2,14 @@ package de.mxro.json;
 
 import de.mxro.json.internal.JSONImpl;
 
+/**
+ * <p>
+ * A JSON document for which fields can be added and which can be rendered into
+ * a {@link String}.
+ * 
+ * @author <a href="http://www.mxro.de">Max Rohde</a>
+ *
+ */
 public abstract class JSON {
 
     /**
@@ -38,7 +46,7 @@ public abstract class JSON {
      * @param indentSize
      *            Defines how many spaces are to be inserted at the beginning of
      *            ever line.
-     * @return Th
+     * @return The rendered string representation of this JSON document.
      */
     public abstract String render(int indentSize);
 
