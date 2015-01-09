@@ -53,7 +53,21 @@ Results in:
 }
 ```
 
-### Maven Dependency
+### Rendering
+
+Documents can either be printed to standard out:
+
+```java
+json.print();
+```
+
+Or rendered as String:
+
+```java
+String str = json.render();
+```
+
+## Maven Dependency
 
 ```xml
 <dependency>
