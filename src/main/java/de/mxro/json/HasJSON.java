@@ -7,5 +7,9 @@ package de.mxro.json;
  *
  */
 public interface HasJSON {
+    /**
+     * 
+     * @return The JSON document representing this object.
+     */
     public JSON getJSON();
 }

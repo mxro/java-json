@@ -24,7 +24,8 @@ public abstract class JSON {
     /**
      * <p>
      * Add a new entry to this JSON.
-     * 
+     * <p>
+     * Note that value may be another {@link JSON} instance.
      * 
      * @param key
      *            The key for the value.
