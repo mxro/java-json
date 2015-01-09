@@ -1,11 +1,22 @@
 package de.mxro.json;
 
-public interface JSON {
+import de.mxro.json.internal.JSONImpl;
 
-    public void add(String key, Object value);
+public abstract class JSON {
 
-    public String render();
+    /**
+     * Creates a new instance. Note instances are not thread-safe.
+     * 
+     * @return A new instance for rendering JSON.
+     */
+    public static JSON create() {
+        return new JSONImpl();
+    }
 
-    public String render(int indentSize);
+    public abstract void add(String key, Object value);
+
+    public abstract String render();
+
+    public abstract String render(int indentSize);
 
 }
