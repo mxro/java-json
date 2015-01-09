@@ -90,11 +90,11 @@ This project is compatible with the following environments:
 - [JavaDocs](http://modules.appjangle.com/java-json/latest/apidocs/)
 - [Project Reports](http://modules.appjangle.com/java-json/latest/project-reports.html)
 
-## License
+## Licenses
 
-Apache 2.0
+- Apache 2.0
 
-MIT
+- MIT
 
 see [LICENSE.TXT](https://github.com/mxro/java-json/blob/master/LICENSE.TXT)
 
