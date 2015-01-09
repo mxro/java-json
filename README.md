@@ -11,7 +11,7 @@ An extremely simple library to render human-readable JSON with Java.
 ### Simple Document
 
 ```java
-final JSON json = JSON.create();
+JSON json = JSON.create();
 
 json.add("text", "hello");
 json.add("number", 123);
@@ -32,7 +32,26 @@ Results in:
 
 JSON documents may be added as values to other JSON documents.
 
+```java
 
+final JSON json = JSON.create();
+
+json.add("text", "hello");
+json.add("inner", JSON.create().add("number", 1234));
+
+json.print();
+```
+
+Results in:
+
+```
+{
+    'text': 'hello',
+    'inner': {
+        'number': '1234'
+    }
+}
+```
 
 
 
