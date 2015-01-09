@@ -1,5 +1,5 @@
 package de.mxro.json;
 
-public interface JSONSerialization {
+public interface HasJSON {
     public JSON getJSON();
 }
