@@ -34,7 +34,7 @@ public abstract class JSON {
      *            instance of {@link JSON}
      * 
      */
-    public abstract void add(String key, Object value);
+    public abstract JSON add(String key, Object value);
 
     /**
      * 

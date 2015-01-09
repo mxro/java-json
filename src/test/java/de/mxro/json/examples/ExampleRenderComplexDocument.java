@@ -8,8 +8,7 @@ public class ExampleRenderComplexDocument {
 
         final JSON json = JSON.create();
 
-        json.add("text", "hello");
-        json.add("number", 123);
+        json.add("", "");
 
         json.print();
 

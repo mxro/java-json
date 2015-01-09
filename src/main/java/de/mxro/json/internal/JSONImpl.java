@@ -11,7 +11,7 @@ public class JSONImpl extends JSON {
     private final List<Entry<String, Object>> entries;
 
     @Override
-    public void add(final String key, final Object value) {
+    public JSON add(final String key, final Object value) {
 
         entries.add(new Entry<String, Object>() {
 
@@ -31,6 +31,8 @@ public class JSONImpl extends JSON {
                 return key;
             }
         });
+
+        return this;
 
     }
 
