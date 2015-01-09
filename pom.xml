@@ -3,7 +3,6 @@
 	<groupId>de.mxro.json</groupId>
 	<artifactId>java-json</artifactId>
 	<version>0.0.2</version>
-
 	<description>Rendering of simple, human-readable JSON documents.</description>
 	<url>https://github.com/mxro/java-json</url>
 	<properties>
