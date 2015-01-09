@@ -57,13 +57,13 @@ Results in:
 
 ```xml
 <dependency>
-    <groupId>de.mxro.metrics</groupId>
-	<artifactId>metrics</artifactId>
+    <groupId>de.mxro.json</groupId>
+	<artifactId>java-json</artifactId>
 	<version>[latest version]</version>
 </dependency>
 ```
 
-Find latest version [here](http://modules.appjangle.com/lightweight-java-metrics/latest/project-summary.html).
+Find latest version [here](http://modules.appjangle.com/java-json/latest/project-summary.html).
 
 Add repository if required:
 
@@ -92,7 +92,11 @@ This project is compatible with the following environments:
 
 ## License
 
+Apache 2.0
 
+MIT
+
+see [LICENSE.TXT]()
 
 
 
