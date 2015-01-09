@@ -11,7 +11,23 @@ An extremely simple library to render human-readable JSON with Java.
 Create a simple document.
 
 ```java
+final JSON json = JSON.create();
+
+json.add("text", "hello");
+json.add("number", 123);
+
+json.print();
+```
+
+Results in:
 
 ```
+{
+    'text': 'hello',
+    'number': '123'
+}
+```
+
+
 
 

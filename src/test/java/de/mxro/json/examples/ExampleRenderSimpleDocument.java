@@ -11,7 +11,7 @@ public class ExampleRenderSimpleDocument {
         json.add("text", "hello");
         json.add("number", 123);
 
-        System.out.println(json.render());
+        json.print();
 
     }
 
