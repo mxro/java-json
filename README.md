@@ -4,7 +4,7 @@
 
 An extremely simple library to render human-readable JSON with Java.
 
-**Why** A simple and very portable way to generate beautiful, human-readable JSON. 
+**Why:** A simple and very portable way to generate beautiful, human-readable JSON. 
 
 ## Usage
 
