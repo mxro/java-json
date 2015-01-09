@@ -8,7 +8,7 @@ An extremely simple library to render human-readable JSON with Java.
 
 ## Usage
 
-Create a simple document.
+### Simple Document
 
 ```java
 final JSON json = JSON.create();
@@ -28,6 +28,9 @@ Results in:
 }
 ```
 
+### Composite Document
+
+JSON documents may be added as values to other JSON documents.
 
 
 
