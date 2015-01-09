@@ -96,7 +96,7 @@ Apache 2.0
 
 MIT
 
-see [LICENSE.TXT]()
+see [LICENSE.TXT](https://github.com/mxro/java-json/blob/master/LICENSE.TXT)
 
 
 
