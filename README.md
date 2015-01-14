@@ -2,7 +2,7 @@
 
 # Java JSON
 
-An extremely simple library to render human-readable JSON with Java.
+[Java JSON](https://github.com/mxro/java-json) is an extremely simple library to render human-readable JSON with Java.
 
 **Why:** A simple and very portable way to generate beautiful, human-readable JSON. 
 
