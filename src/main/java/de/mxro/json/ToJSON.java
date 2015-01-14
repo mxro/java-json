@@ -6,7 +6,7 @@ package de.mxro.json;
  * @author <a href="http://www.mxro.de">Max Rohde</a>
  *
  */
-public interface HasJSON {
+public interface ToJSON {
     /**
      * 
      * @return The JSON document representing this object.
