@@ -17,6 +17,9 @@ public class JSONUtils {
             return json.render(indent.length() + 4);
 
         } else if (object instanceof JSONArray) {
+            final JSONArray array = (JSONArray) object;
+
+            return array.render(indent.length() + 4);
 
         } else {
             return "'" + object.toString() + "'";
