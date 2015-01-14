@@ -24,11 +24,20 @@ public class JSONArrayImpl implements JSONArray {
     @Override
     public String render(final int indentSize) {
         final String indent = JSONUtils.indent(indentSize);
-        String res = "[";
+        String res = "[\n";
 
+        int idx = 0;
         for (final Object item : items) {
 
             res += indent + item.toString();
+
+            idx++;
+            if (idx != items.size()) {
+                res += ",\n";
+            } else {
+                res += "\n";
+            }
+
         }
 
         res += indent + "]";
