@@ -21,6 +21,10 @@ public abstract class JSON {
         return new JSONImpl();
     }
 
+    public static JSONArray createArray() {
+
+    }
+
     /**
      * <p>
      * Add a new entry to this JSON.
@@ -31,7 +35,7 @@ public abstract class JSON {
      *            The key for the value.
      * @param value
      *            Value for the key. Can be a generic object, a string, or an
-     *            instance of {@link JSON}
+     *            instance of {@link JSON} or {@link JSONArray}
      * 
      */
     public abstract JSON add(String key, Object value);
