@@ -38,8 +38,7 @@ public class JSONArrayImpl implements JSONArray {
 
     @Override
     public void print() {
-        // TODO Auto-generated method stub
-
+        System.out.println(render());
     }
 
     public JSONArrayImpl() {
