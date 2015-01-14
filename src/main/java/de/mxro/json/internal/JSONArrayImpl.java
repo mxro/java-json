@@ -29,7 +29,7 @@ public class JSONArrayImpl implements JSONArray {
         int idx = 0;
         for (final Object item : items) {
 
-            res += indent + item.toString();
+            res += indent + JSONUtils.render(indent, item);
 
             idx++;
             if (idx != items.size()) {
