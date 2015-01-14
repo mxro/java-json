@@ -1,6 +1,6 @@
 package de.mxro.json;
 
-public interface JSONObject {
+public abstract class JSONObject extends JSON {
 
     /**
      * <p>
@@ -21,6 +21,7 @@ public interface JSONObject {
      * 
      * @return The rendered string representation of this JSON document.
      */
+    @Override
     public abstract String render();
 
     /**
@@ -30,6 +31,7 @@ public interface JSONObject {
      *            ever line.
      * @return The rendered string representation of this JSON document.
      */
+    @Override
     public abstract String render(int indentSize);
 
     /**

@@ -1,13 +1,14 @@
 package de.mxro.json;
 
-public interface JSONArray {
+public abstract class JSONArray extends JSON {
 
-    public JSONArray push(Object value);
+    public abstract JSONArray push(Object value);
 
     /**
      * 
      * @return The rendered string representation of this JSON array.
      */
+    @Override
     public abstract String render();
 
     /**
@@ -17,11 +18,13 @@ public interface JSONArray {
      *            ever line.
      * @return The rendered string representation of this JSON array.
      */
+    @Override
     public abstract String render(int indentSize);
 
     /**
      * <p>
      * Prints this array to standard out.
      */
+    @Override
     public abstract void print();
 }
