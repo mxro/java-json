@@ -3,9 +3,10 @@ package de.mxro.json.internal;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.mxro.json.JSON;
 import de.mxro.json.JSONArray;
 
-public class JSONArrayImpl implements JSONArray {
+public class JSONArrayImpl extends JSON implements JSONArray {
 
     private final List<Object> items;
 

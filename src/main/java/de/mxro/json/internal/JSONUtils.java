@@ -1,7 +1,7 @@
 package de.mxro.json.internal;
 
-import de.mxro.json.JSON;
 import de.mxro.json.JSONArray;
+import de.mxro.json.JSONObject;
 
 public class JSONUtils {
 
@@ -10,9 +10,9 @@ public class JSONUtils {
         if (object instanceof String) {
 
             return "'" + object + "'";
-        } else if (object instanceof JSON) {
+        } else if (object instanceof JSONObject) {
 
-            final JSON json = (JSON) object;
+            final JSONObject json = (JSONObject) object;
 
             return json.render(indent.length() + 4);
 
