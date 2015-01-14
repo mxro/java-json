@@ -128,6 +128,9 @@ This project is compatible with the following environments:
 - [JavaDocs](http://modules.appjangle.com/java-json/latest/apidocs/)
 - [Project Reports](http://modules.appjangle.com/java-json/latest/project-reports.html)
 - [Documentation with TOC](http://documentup.com/mxro/java-json)
+- [ReadTheDocs](http://java-json.readthedocs.org/en/latest/)
+
+[![Documentation Status](https://readthedocs.org/projects/java-json/badge/?version=latest)](https://readthedocs.org/projects/java-json/?badge=latest)
 
 ## Licenses
 
