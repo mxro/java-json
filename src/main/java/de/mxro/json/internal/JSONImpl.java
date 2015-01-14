@@ -52,17 +52,8 @@ public class JSONImpl extends JSON {
             if (e.getValue() instanceof String) {
                 res += indent + "    '" + e.getKey() + "': '" + e.getValue() + "'";
 
-            } else if (e.getValue() instanceof JSONImpl) {
-
-                final JSON json = (JSON) e.getValue();
-
-                res += "    '" + e.getKey() + "': ";
-
-                res += json.render(indentSize + 4);
-                continue;
             } else {
-
-                res += indent + "    '" + e.getKey() + "': '" + e.getValue().toString() + "'";
+                res += indent + "    '" + e.getKey() + "': " + JSONUtils.render(indent, e.getValue());
             }
 
             if (count != entries.size()) {
