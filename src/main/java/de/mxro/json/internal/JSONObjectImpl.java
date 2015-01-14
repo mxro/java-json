@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import de.mxro.json.JSON;
 import de.mxro.json.JSONObject;
 
-public class JSONImpl extends JSONObject {
+public class JSONObjectImpl extends JSONObject {
 
     private final List<Entry<String, Object>> entries;
 
@@ -61,13 +61,13 @@ public class JSONImpl extends JSONObject {
 
         }
 
-        res += indent + "}\n";
+        res += indent + "}";
 
         return res;
 
     }
 
-    public JSONImpl() {
+    public JSONObjectImpl() {
         super();
         this.entries = new ArrayList<Entry<String, Object>>();
     }

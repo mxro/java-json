@@ -1,7 +1,7 @@
 package de.mxro.json;
 
 import de.mxro.json.internal.JSONArrayImpl;
-import de.mxro.json.internal.JSONImpl;
+import de.mxro.json.internal.JSONObjectImpl;
 
 /**
  * <p>
@@ -19,7 +19,7 @@ public abstract class JSON {
      * @return A new instance for rendering JSON.
      */
     public static JSONObject create() {
-        return new JSONImpl();
+        return new JSONObjectImpl();
     }
 
     public static JSONArray createArray() {
