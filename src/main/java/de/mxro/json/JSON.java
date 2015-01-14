@@ -18,11 +18,11 @@ public abstract class JSON {
      * 
      * @return A new instance for rendering JSON.
      */
-    public static JSON create() {
+    public static JSONObject create() {
         return new JSONImpl();
     }
 
-    public static JSON createArray() {
+    public static JSONArray createArray() {
         return new JSONArrayImpl();
     }
 
