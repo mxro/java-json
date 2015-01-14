@@ -49,12 +49,8 @@ public class JSONImpl extends JSON {
         int count = 0;
         for (final Entry<String, Object> e : entries) {
             count += 1;
-            if (e.getValue() instanceof String) {
-                res += indent + "    '" + e.getKey() + "': '" + e.getValue() + "'";
 
-            } else {
-                res += indent + "    '" + e.getKey() + "': " + JSONUtils.render(indent, e.getValue());
-            }
+            res += indent + "    '" + e.getKey() + "': " + JSONUtils.render(indent, e.getValue()) + "";
 
             if (count != entries.size()) {
                 res += ",\n";

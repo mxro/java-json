@@ -6,17 +6,14 @@ public class JSONUtils {
 
     public static final String render(final String indent, final Object object) {
         String res = "";
-        if (e.getValue() instanceof JSONImpl) {
+        if (object instanceof JSON) {
 
-            final JSON json = (JSON) e.getValue();
+            final JSON json = (JSON) object;
 
-            res += "    '" + e.getKey() + "': ";
+            res += json.render(indent.length() + 4);
 
-            res += json.render(indentSize + 4);
-            continue;
         } else {
 
-            res += indent + "    '" + e.getKey() + "': '" + e.getValue().toString() + "'";
         }
     }
 
