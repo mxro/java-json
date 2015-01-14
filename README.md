@@ -53,6 +53,12 @@ Results in:
 }
 ```
 
+### JSON Arrays
+
+```java
+
+```
+
 ### Rendering
 
 Documents can either be printed to standard out:
