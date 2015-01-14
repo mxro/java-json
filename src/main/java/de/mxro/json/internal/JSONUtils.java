@@ -1,19 +1,25 @@
 package de.mxro.json.internal;
 
 import de.mxro.json.JSON;
+import de.mxro.json.JSONArray;
 
 public class JSONUtils {
 
     public static final String render(final String indent, final Object object) {
-        String res = "";
-        if (object instanceof JSON) {
+
+        if (object instanceof String) {
+
+            return "'" + object + "'";
+        } else if (object instanceof JSON) {
 
             final JSON json = (JSON) object;
 
-            res += json.render(indent.length() + 4);
+            return json.render(indent.length() + 4);
+
+        } else if (object instanceof JSONArray) {
 
         } else {
-
+            return "'" + object.toString() + "'";
         }
     }
 
