@@ -36,14 +36,6 @@ public class JSONImpl extends JSON {
 
     }
 
-    private final String indent(final int size) {
-        String indent = "";
-        for (int i = 1; i <= size; i++) {
-            indent += " ";
-        }
-        return indent;
-    }
-
     @Override
     public String render() {
         return render(0);
@@ -51,7 +43,7 @@ public class JSONImpl extends JSON {
 
     @Override
     public String render(final int indentSize) {
-        final String indent = indent(indentSize);
+        final String indent = JSONUtils.indent(indentSize);
         String res = "{\n";
 
         int count = 0;
