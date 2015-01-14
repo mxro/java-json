@@ -55,8 +55,26 @@ Results in:
 
 ### JSON Arrays
 
-```java
+Arrays can be added as values of JSON documents.
 
+```java
+JSON json = JSON.create();
+        
+json.add("array", JSON.createArray().push("1").push("2").push("3"));
+
+json.print();
+```
+
+Results in:
+
+```
+{
+    'array': [
+        '1',
+        '2',
+        '3'
+    ]
+}
 ```
 
 ### Rendering
