@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import de.mxro.json.JSON;
 import de.mxro.json.JSONObject;
 
-public class JSONImpl extends JSON implements JSONObject {
+public class JSONImpl extends JSONObject {
 
     private final List<Entry<String, Object>> entries;
 
