@@ -23,7 +23,7 @@ public class JSONArrayImpl implements JSONArray {
 
     @Override
     public String render(final int indentSize) {
-        final String indent = JSONUtils.indent(indentSize);
+        final String indent = JSONUtils.indent(indentSize + 4);
         String res = "[\n";
 
         int idx = 0;
@@ -40,7 +40,7 @@ public class JSONArrayImpl implements JSONArray {
 
         }
 
-        res += indent + "]";
+        res += JSONUtils.indent(indentSize) + "]";
 
         return res;
     }
