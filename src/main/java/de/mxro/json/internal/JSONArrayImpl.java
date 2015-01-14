@@ -17,14 +17,23 @@ public class JSONArrayImpl implements JSONArray {
 
     @Override
     public String render() {
-        // TODO Auto-generated method stub
-        return null;
+
+        return render(0);
     }
 
     @Override
     public String render(final int indentSize) {
-        // TODO Auto-generated method stub
-        return null;
+        final String indent = JSONUtils.indent(indentSize);
+        String res = "[";
+
+        for (final Object item : items) {
+
+            res += indent + item.toString();
+        }
+
+        res += indent + "]";
+
+        return res;
     }
 
     @Override
