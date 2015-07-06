@@ -1,3 +1,5 @@
+** MOVED ** This project has moved to [javadelight/delight-json](https://github.com/javadelight/delight-json).
+
 [![Build Status](https://travis-ci.org/mxro/java-json.svg)](https://travis-ci.org/mxro/java-json)
 
 # Java JSON
